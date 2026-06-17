@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Valencia Shores PAP Birthday Greetings - Responsive Preview</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href="https://vsbirthday.club/assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
+    <link href="https://vsbirthday.club/assets/plugins/uniform/css/uniform.default.min.css" rel="stylesheet"/>
+    <link href="https://vsbirthday.club/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://vsbirthday.club/assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="https://vsbirthday.club/assets/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css"/>	
+    <link href="https://vsbirthday.club/assets/plugins/waves/waves.min.css" rel="stylesheet" type="text/css"/>	
+    <link href="https://vsbirthday.club/assets/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://vsbirthday.club/assets/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css"/>	
+    <link rel="icon" href="https://vsbirthday.club/img/fivacon2.png">
+    <link href="https://vsbirthday.club/assets/css/modern.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://vsbirthday.club/assets/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link href="https://vsbirthday.club/assets/css/multiselect/multi.css" rel="stylesheet" type="text/css"/>
+    <link href="https://vsbirthday.club/css/mobile-responsive.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://vsbirthday.club/assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
+    <script src="https://vsbirthday.club/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="https://vsbirthday.club/assets/js/custom.js"></script>
+
+    <!-- CRITICAL MOBILE CSS OVERRIDES -->
+    <style>
+        /* Fix panel heading wrapping and cutoff */
+        .panel-heading { 
+            height: auto !important; 
+            min-height: 40px !important; 
+            padding-top: 10px !important; 
+            padding-bottom: 10px !important; 
+            overflow: visible !important; 
+        }
+        .panel-heading .panel-title { 
+            line-height: 1.4 !important; 
+            white-space: normal !important; 
+            overflow: visible !important; 
+        }
+        
+        /* Reduce excess white space at the very top of mobile screens */
+        .navbar { min-height: auto !important; margin-bottom: 0 !important; position: relative !important; }
+        .page-inner { padding-top: 10px !important; }
+        .page-title { padding: 10px 0 !important; margin: 0 !important; display: block !important; clear: both !important; }
+        #main-wrapper { margin-top: 5px !important; padding-top: 0 !important; }
+        .createNewOrder { margin-top: 0 !important; padding-top: 0 !important; }
+        .logo-box { padding-bottom: 5px !important; }
+        
+        /* Layout formatting wrapper for our new mobile dropdown selector */
+        .mobile-month-wrapper { width: 100% !important; margin: 15px 0 10px 0 !important; clear: both !important; display: none !important; }
+        .mobile-month-label { font-weight: bold; font-size: 14px; margin-bottom: 5px; display: block; color: #333; }
+        .mobile-month-dropdown { 
+            width: 100% !important; 
+            height: 40px !important; 
+            font-size: 16px !important; 
+            font-weight: bold !important; 
+            color: #d9534f !important; /* Crimson Red for selected value */
+            background-color: #fff !important; 
+            border: 1px solid #ccc !important; 
+            border-radius: 4px !important; 
+            padding: 5px 10px !important; 
+        }
+        .mobile-month-dropdown option { color: #333 !important; font-weight: normal !important; }
+        
+        /* Global Mobile Viewport Tweaks */
+        @media (max-width: 767px) {
+            .mobile-month-wrapper { display: block !important; } /* Only show dropdown on mobile panels */
+            .tabs-left > .nav-tabs { display: none !important; } /* Hide layout-breaking side month tabs */
+            .tabs-left > .tab-content { margin-left: 0 !important; width: 100% !important; float: none !important; display: block !important; }
+            
+            /* Stack the multiselect columns vertically instead of horizontally */
+            .multi-wrapper { display: block !important; }
+            .multi-wrapper .non-selected-wrapper, 
+            .multi-wrapper .selected-wrapper { width: 100% !important; float: none !important; margin-bottom: 10px; }
+            
+            /* Clean up margins, buttons and spacing rules */
+            .custom_md-12 { padding-left: 0 !important; padding-right: 0 !important; }
+            .price_per_greeting, .totalprice { width: 100% !important; float: none !important; text-align: left !important; margin-bottom: 10px; font-size: 16px; }
+            .create_new_btn { width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; margin-bottom: 10px !important; display: block; padding: 12px !important; }
+        }
+    </style>
+</head>
+<body class="page-header-fixed compact-menu page-horizontal-bar">
+    <div class="overlay"></div>
+    <main class="page-content content-wrap">
+        <div class="navbar">
+            <div class="navbar-inner container">
+                <div class="logo-box">
+                    <div class="logo-text"><img src="https://vsbirthday.club/assets/images/Pap-Corps-Logo.png" alt="" class="menu_logo" /> <span>Valencia Shores PAP Birthday Greetings</span></div>
+                    <div class="float-right" style="padding-top: 12px; display:block;"><a href="/profile?show=email_card" class="btn btn-danger" style="color: white;">Birthday Card Preference</a></div>
+                </div>
+            </div>
+            <div class="page-sidebar sidebar horizontal-bar">
+                <div class="page-sidebar-inner">
+                    <ul class="menu accordion-menu">
+                        <li class="active"><a href="https://vsbirthday.club/dashboard"><span class="fa icon-paper-plane"></span><p> Send Birthday Greetings</p></a></li>
+                        <li><a href="https://vsbirthday.club/orders"><span class="menu-icon icon-list"></span><p>My Orders</p></a></li>
+                        <li><a href="https://vsbirthday.club/profile"><span class="menu-icon icon-user"></span><p>My Profile</p></a></li>
+                        <li><a href="/admin/dashboard"><span class="menu-icon icon-grid"></span><p>Back To Admin Area</p></a></li>
+                        <li><a href="https://vsbirthday.club/help"><span class="menu-icon icon-support"></span><p>Help</p></a></li>
+                        <li>
+                            <a href="https://vsbirthday.club/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out m-r-xs"></i> Logout</a>
+                            <form id="logout-form" action="https://vsbirthday.club/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="tHZJ0QzLj5P7NgUgVmx1NQ3BVQrFyvhMHZAKP83s">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-inner">
+            <div class="page-title print_hide">
+                <div class="container">
+                    <h3 class="col-md-6">Send Birthday Greetings </h3>
+                </div>
+            </div>
+            <div id="main-wrapper" class="container">
+                <div class="row">
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://vsbirthday.club/assets/js/multiselect/multi.js"></script>
+                    
+                    <div class="createNewOrder">
+                        <div role="tabpanel">
+                            <div class="col-md-12">
+                                <div class="panel" style="border:1px solid #ccc;">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Send Birthday Greetings Order Form</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!-- Replaced donation label layout to safely wrap text -->
+                                        <div class="col-md-12" style="padding-left: 0; padding-right: 0; margin-bottom: 10px;">
+                                            <label class="text-bold" style="display:block; margin-bottom:5px;">Additional Donations always appreciated ($):</label>
+                                            <input type="number" name="donationAmount" step="1" min="0" class="form-control" value="0" style="max-width: 200px;" />
+                                        </div>
+                                        
+                                        <!-- Safe Injection Area for Mobile Dropdown Selector Container -->
+                                        <div class="mobile-month-wrapper">
+                                            <label class="mobile-month-label">Select Greeting Month:</label>
+                                            <select class="mobile-month-dropdown" id="mobileMonthSelect">
+                                                <option value="#tab1">October 2026</option>
+                                                <option value="#tab2">November 2026</option>
+                                                <option value="#tab3">December 2026</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="panel-body">
+                                        <div class="tabs-left" role="tabpanel">
+                                            <!-- Standard Navigation Layout for Desktop Monitors -->
+                                            <ul class="nav nav-tabs" role="tablist">
+                                                <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">October <br> <small>2026</small></a></li>
+                                                <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">November <br> <small>2026</small></a></li>
+                                                <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">December <br> <small>2026</small></a></li>
+                                            </ul>
+                                            
+                                            <div class="tab-content">
+                                                <!-- MONTH 1 PANEL -->
+                                                <div role="tabpanel" class="tab-pane active fade in" id="tab1">
+                                                    <div class="col-md-12">
+                                                        <select multiple="multiple" name="availableMembersMonth1" id="availableMembersMonth1">
+                                                            <option value="18">Alan Amira (8)</option>
+                                                            <option value="35">Marilyn Bates (5)</option>
+                                                            <option value="37">Roslyn Baum (13)</option>
+                                                            <option value="1211">Debi Berg (26)</option>
+                                                            <option value="45">Arnold Bernstein (16)</option>
+                                                            <option value="56">Sandra H Blank (17)</option>
+                                                            <option value="68">Izzy Bordainick (24)</option>
+                                                            <option value="1072">Karen Cherwony (11)</option>
+                                                            <option value="1178">Sheryl Cohen (2)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- MONTH 2 PANEL -->
+                                                <div role="tabpanel" class="tab-pane fade" id="tab2">
+                                                    <div class="col-md-12">
+                                                        <select multiple="multiple" name="availableMembersMonth2" id="availableMembersMonth2">
+                                                            <option value="10">Debra Aisenberg (1)</option>
+                                                            <option value="13">Jay Albert (15)</option>
+                                                            <option value="14">Joan Albert (29)</option>
+                                                            <option value="966">Barbara Bandura (25)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- MONTH 3 PANEL -->
+                                                <div role="tabpanel" class="tab-pane fade" id="tab3">
+                                                    <div class="col-md-12">
+                                                        <select multiple="multiple" name="availableMembersMonth3" id="availableMembersMonth3">
+                                                            <option value="47">Carol Bigman (17)</option>
+                                                            <option value="69">Sue Bordainick (14)</option>
+                                                            <option value="106">Clare Cohen (5)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- PRICING & CHECKOUT CONTAINER -->
+                                        <div class="col-md-12 custom_md-12" style="margin-top:20px;">
+                                            <div class="col-md-3 price_per_greeting"><b>Price Per Greeting</b>: <span>$1.50</span></div>
+                                            <div class="col-md-3 totalprice"><b>Total</b>: <span>$0.00</span></div>
+                                            <button data-type="checkout" class="btn btn-lg btn-danger create_new_btn save_progress checkout_btn mt-2 mb-2">Check Out</button>
+                                            <button data-type="update" class="btn btn-lg btn-success create_new_btn save_progress mt-2 mb-2 mr-2">Save Progress</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CORE SCRIPTS AND TIMING CALCULATIONS LOGIC -->
+    <script>
+        var price = 1.5;
+        
+        // TIMING BUG RESOLUTION: Unified counting formula that wraps the mathematical query with a brief delay function
+        function recalculateOrderTotals() {
+            setTimeout(function() {
+                var count = $("#availableMembersMonth1 :selected").length;
+                var count2 = $("#availableMembersMonth2 :selected").length;
+                var count3 = $("#availableMembersMonth3 :selected").length;
+                var donation = $('input[name="donationAmount"]').val() || 0;
+                
+                var totalItems = count + count2 + count3;
+                var selectionsCount = (totalItems * price) + parseFloat(donation);
+                
+                $('.totalprice span').html('$' + parseFloat(selectionsCount, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,"));
+            }, 50); // A 50ms pause gives the multi.js library time to save selection state to memory
+        }
+
+        // Attach listeners across all data selection fields to watch for changes
+        $('#availableMembersMonth1, #availableMembersMonth2, #availableMembersMonth3').change(recalculateOrderTotals);
+        $('input[name="donationAmount"]').on('input', recalculateOrderTotals);
+
+        // Map mobile custom select element actions directly to browser tab click engine
+        $('#mobileMonthSelect').on('change', function() {
+            var targetTab = $(this).val();
+            $('.tab-pane').removeClass('active in fade');
+            $(targetTab).addClass('active in');
+            
+            // Simultaneously update desktop nav headers in the background to ensure parity
+            $('.nav-tabs li').removeClass('active');
+            $('.nav-tabs a[href="' + targetTab + '"]').parent().addClass('active');
+        });
+
+        // Initialize multi.js plugin elements
+        $('#availableMembersMonth1').multi({'non_selected_header': "Available Birthdays (Day)", 'selected_header': "Selected Birthdays (Day)"});
+        $('#availableMembersMonth2').multi({'non_selected_header': "Available Birthdays (Day)", 'selected_header': "Selected Birthdays (Day)"});
+        $('#availableMembersMonth3').multi({'non_selected_header': "Available Birthdays (Day)", 'selected_header': "Selected Birthdays (Day)"});
+    </script>
+</body>
+</html>
